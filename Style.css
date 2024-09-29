@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex; /* Sử dụng Flexbox để căn lề */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex; /* Sử dụng Flexbox cho phần nội dung header */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.profile-image {
+    width: 150px; /* Kích thước hình ảnh */
+    height: 150px; /* Đặt chiều cao để hình tròn */
+    border-radius: 50%; /* Để tạo hình tròn */
+    margin-right: 20px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+.header-info {
+    text-align: left; /* Căn lề trái cho nội dung */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+ul {
+    list-style-type: disc; /* Đặt kiểu chấm đầu dòng */
+    padding-left: 20px; /* Thêm lề trái */
+}
+
+li {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Add simple animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
